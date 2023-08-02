@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A Digital Analog Clock</title>
+    <link rel="stylesheet" href="../../../scripts/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> <!--Open Sans font-->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> <!--Inconsolata Font-->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <script src="script.js" defer></script> <!--Clock CSS-->
+    <link rel="stylesheet" href="../../../scripts/style.css"> <!--Global CSS-->
+    <script src="https://use.fontawesome.com/2f4a570f73.js"></script> <!--Icon Library-->
+    <nav>
+                <a href="../../../index.html">Index</a>
+                <a href="../../../portfolio/index.html">Portfolio</a>
+                <a href="../../../index.html#contact">Contact</a>
+               
+
+                            <!--BootStrap Drop Down Menu-->
+                    <div class="dropdown">
+                        <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">JavaScript Projects
+                        <span class="caret"></span></button>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Anolog Clock</a></li>
+                            <li><a href="../typespeed/index.html">Type Speed</a></li>
+                        </ul>           
+                </div> <!--End of dropdown menu div-->
+            </nav>
+        
+   
+</head>
+
+<body><br>
+    <h1>The Time is...</h1>
+<main class="main">
+    <div class="clockbox">
+        <svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+            <g id="face">
+                <circle class="circle" cx="300" cy="300" r="253.9"/>
+                <path class="hour-marks" d="M300.5 94V61M506 300.5h32M300.5 506v33M94 300.5H60M411.3 107.8l7.9-13.8M493 190.2l13-7.4M492.1 411.4l16.5 9.5M411 492.3l8.9 15.3M189 492.3l-9.2 15.9M107.7 411L93 419.5M107.5 189.3l-17.1-9.9M188.1 108.2l-9-15.6"/>
+                <circle class="mid-circle" cx="300" cy="300" r="16.2"/>
+            </g>
+            <g id="hour">
+                <path class="hour-arm" d="M300.5 298V142"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="minute">
+                <path class="minute-arm" d="M300.5 298V67"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+            <g id="second">
+                <path class="second-arm" d="M300.5 350V55"/>
+                <circle class="sizing-box" cx="300" cy="300" r="253.9"/>
+            </g>
+        </svg>
+    </div><!-- .clockbox -->
+    
+
+</main>
+        <!-- // Footer & contact info -->
+<footer>
+        <div class="content-wrap">
+        <h2 id="contact">Get in Touch!</h2>
+        
+        <!-- Social media and contact links. Add or remove any networks. -->
+        <div class="con-info">
+            <a href="mailto:aidanlowson@hotmail.co.uk"><i class="fa fa-envelope" aria-hidden="true"></i>
+            <span class="sr-only">FaceBook</span></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span></a>
+            <a href="https://www.linkedin.com/in/aidanlowson1/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <span class="sr-only">Linkedin</span></a>
+            <a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <span class="sr-only">FaceBook</span></a>
+        </div>
+
+        <p>&copy;Copyright 2017 by Aidan Lowson</p>
+        </div>
+</footer>
+    
+<script src="../../../scripts/jquery-2.1.4.min.js"></script>
+<script src="../../../scripts/bootstrap.min.js"></script>
+</body>
+
+</html>

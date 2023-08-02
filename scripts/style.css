@@ -1,0 +1,190 @@
+/* css portfolio page */
+
+/*------ color pallet ------*/
+/* Dark Grey    #4C4C4C; */
+/* Light Grey   #BBBFB9 */
+/* Turquoise    #55676B */
+/* Light Turqoise #738384 */
+/* Lime Green #67BF96 */
+
+/*------ Global Section ------*/
+html {
+    background: #4C4C4C; /*Dark Grey*/
+    /* Applying a natural box layour model to all elements*/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.dropdown {
+    text-align: center;
+    float: right;
+    top: 0;
+    text-transform: uppercase;
+}
+
+body { 
+    margin: 0 auto;
+    background:  #BBBFB9; /*Light Grey*/
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header img {
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+header {
+   position: relative;
+}
+
+nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background: #55676B;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size:32px;
+    margin-top: 0px;
+}
+
+h3{
+    margin: 0;
+}
+
+h1, h2 {
+    color:#67BF96;
+    font-family: 'Inconsolata', monospace;
+}
+
+p {
+    line-height: 140%;
+}
+
+footer, header {
+    background: #4C4C4C;
+}
+
+a{
+    text-decoration: none;
+    color: #67BF96;
+}
+
+a:hover {
+    color: #738384;
+}
+
+a:visited {
+    /*color: beige;*/
+}
+
+footer {
+    border-top: solid;
+    border-top-color: black;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    background: firebrick;
+    color: white;
+}
+
+.downl{
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+} /*For my download Button*/
+
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*------ Work Experiance ------*/
+.workexp {
+    background: #55676B; /*Turqoise*/
+}
+
+/*----------------------*/
+
+/*------ Education ------*/
+/*    background: #738384; Light Turqoise*/
+.education {
+
+    background: linear-gradient(rgba(141, 153, 174, 0.8), rgba(141, 153, 174, 0.5)),
+                url(../media/images/backimg2.jpeg) fixed ;
+}
+
+.education h2 {
+    color: green;
+}
+
+p + h3 {
+    margin-top: 30px;
+}
+/*-----------------------*/
+
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0px auto;
+    padding: 60px 15px;
+    overflow: hidden;
+}
+
+.con-info a {
+    padding: 15px;
+    display: inline-block;
+}
+
+
+.job-desc {
+    margin-bottom: 25px;
+}
+
+.job-desc p:first-of-type{
+    margin-top: 0;
+}
+
+h3 ~ p{
+    margin: 0;
+}
+
+/*Media Queries*/
+
+@media (min-width: 900px) {
+    .col-n {
+    width: 30%;
+    float: left;
+
+
+}
+
+.col-w {
+    width: 70%;
+    float: left;
+    padding-left: 0px; 
+}
+
+}
